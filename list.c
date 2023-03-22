@@ -96,14 +96,16 @@ void pushBack(List * list, void * data) {
     pushCurrent(list,data);
 }
 
-void pushCurrent(List * list, void * data) {
+void pushCurrent(List * list, void * data)
+{
+  
   Node *NuevoNodo = createNode(data);
   if(list->current== NULL){//si no hay datos
    
     list->head = NuevoNodo;
     list->tail = NuevoNodo;
   }
-   else
+  else
     {  
       if(list->current == list->tail)//si nos encontramos al final de la lista
       {
@@ -120,10 +122,7 @@ void pushCurrent(List * list, void * data) {
       
     }
     
-  }
-  return;
-  
-  
+  }  
 }
 
 void * popFront(List * list) {
