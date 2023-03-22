@@ -98,13 +98,13 @@ void pushBack(List * list, void * data) {
 
 void pushCurrent(List * list, void * data){
   Node *NuevoNodo = createNode(data);
-  if(list->current == NULL){ //si no hay datos
+  if(list->current == NULL){ 
    
     list->head = NuevoNodo;
     list->tail = NuevoNodo;
   }
   else{  
-      if(list->current == list->tail){ //si nos encontramos al final de la lista
+      if(list->current == list->tail){ 
         list->tail = NuevoNodo;
       }
       else{
