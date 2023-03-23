@@ -190,3 +190,9 @@ list.c:141:17: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 be5db1b
+Thu 23 Mar 2023 02:36:57 PM UTC: 
+ list.c | 21 ++++++++++++++++-----
+ 1 file changed, 16 insertions(+), 5 deletions(-)
+ tests:  12|0
+total_score: 70/70
+935b3a1
