@@ -144,7 +144,7 @@ void * popCurrent(List * list) {
   
   
   
-    return NULL;
+    return DatoGuardado;
 }
 
 void cleanList(List * list) {
