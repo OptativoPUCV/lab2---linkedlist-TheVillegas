@@ -165,3 +165,17 @@ list.c:135:9: error: variable ‘DatoGuardado’ set but not used [-Werror=unuse
 cc1: all warnings being treated as errors
 Compilation failed
 ec4fbe5
+Thu 23 Mar 2023 02:29:55 PM UTC: 
+ list.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:141:17: error: statement with no effect [-Werror=unused-value]
+  141 |   list->current == NULL;
+      |                 ^
+list.c:135:9: error: variable ‘DatoGuardado’ set but not used [-Werror=unused-but-set-variable]
+  135 |   void *DatoGuardado;
+      |         ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+586f69c
