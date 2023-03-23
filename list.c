@@ -132,6 +132,13 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
+  void *DatoGuardado;
+  if(list->current == NULL) return NULL;
+  DatoGuardado = list->current->data;
+
+  
+  
+  
     return NULL;
 }
 
